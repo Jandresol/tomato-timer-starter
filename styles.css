@@ -1,32 +1,57 @@
+/* Make the full page grey and center everything */
 body {
     font-family: Arial, sans-serif;
+    background-color: #888; /* grey background */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
 }
 
+/* Container styling for layout */
 .container {
     text-align: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Make the timer text very large */
 #timer-display {
-    margin: 20px 0;
-    font-size: 48px;
+    margin: 30px 0;
+    font-size: 80px; /* larger font size */
+    font-weight: bold;
+    color: #333;
 }
 
-#buttons button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+/* Button styling */
+#buttons button,
+#theme-selector button {
+    margin: 8px;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
+#buttons button:hover,
+#theme-selector button:hover {
+    background-color: #ddd;
+}
+
+/* Session count */
 #session-count {
     margin-top: 20px;
+    font-size: 18px;
+    color: #444;
 }
 
+/* Optional themes */
 .light-theme {
     background-color: white;
     color: black;
